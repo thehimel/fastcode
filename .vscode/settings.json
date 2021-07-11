@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "./venv/bin/python",
+    "python.autoComplete.extraPaths": [
+        "./venv/bin/"
+    ],
+    "editor.minimap.enabled": true,
+    "python.analysis.extraPaths": [
+        "./venv/bin/"
+    ],
+}
