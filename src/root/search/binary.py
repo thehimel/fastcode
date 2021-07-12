@@ -5,19 +5,16 @@ https://github.com/thehimel/data-structures-and-algorithms-udacity/blob/master/m
 
 
 def binary_search(a, t):
-    si, ei = 0, len(a) - 1
+    s, e = 0, len(a) - 1
 
-    while si <= ei:
-        mi = (si + ei) // 2
-        me = a[mi]
+    while s <= e:
+        i = (s + e) // 2
+        x = a[i]
 
-        if t is me:
-            return mi
-
-        elif t < me:
-            ei = mi - 1
-
+        if t is x:
+            return i
+        elif t < x:
+            e = i - 1
         else:
-            si = mi + 1
-
+            s = i + 1
     return -1
